@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar } from "./";
+import { callDatabase, PuppyList } from "./";
 
 const Main = () => {
-    return(
-        <div id="main">
-            <Navbar />
-        </div>
-    )
-}
+  const [puppies, setPuppies] = useState([]);
 
-export default Main
+  const getPuppies = async () => {
+    const newPuppies = await callDatabase();
+    setPuppies(newPuppies);
+    console.log(puppies);
+  };
+
+  useEffect(() => {
+    getPuppies();
+    console.log(puppies);
+  }, []);
+
+  return (
+    <div id="main">
+      <Navbar />
+      <PuppyList />
+    </div>
+  );
+};
+
+export default Main;
