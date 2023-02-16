@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Navbar } from "./";
-import { callDatabase, PuppyList } from "./";
+import { callDatabase, PuppyList, } from "./";
 
 const Main = () => {
   const [puppies, setPuppies] = useState([]);
@@ -19,7 +19,8 @@ const Main = () => {
   return (
     <div id="main">
       <Navbar />
-      <PuppyList />
+      
+      <PuppyList puppies = {puppies}/>
     </div>
   );
 };

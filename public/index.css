@@ -1,13 +1,42 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 #navbar {
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    max-height: 10%;
-    min-height: 40px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  max-height: 10%;
+  min-height: 40px;
+}
+
+#searchBarInput {
+  border-radius: 10px;
+}
+
+#searchBarButton {
+  margin-left: 20px;
+  border-radius: 10px;
+}
+#puppyListDisplay {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#puppyCardDisplay {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
+  align-items: center;
+}
+
+#puppyProfilePic {
+  width: 200px;
 }

@@ -1,7 +1,17 @@
 import React from "react";
+import {PuppyCard} from "./"
 
-const PuppyList = () => {
-  return <h1>I am puppy list</h1>;
+const PuppyList = (props) => {
+  
+  const puppies = props.puppies
+  
+  
+  
+  return <div id="puppyListDisplay">
+  {puppies.map(puppy => {
+   return <PuppyCard puppy = {puppy}/>
+  })}
+</div>
 };
 
 export default PuppyList;
