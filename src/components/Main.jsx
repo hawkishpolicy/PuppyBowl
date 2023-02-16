@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Navbar } from "./";
-import { callDatabase, PuppyList, } from "./";
+import { callDatabase, PuppyList } from "./";
 
 const Main = () => {
   const [puppies, setPuppies] = useState([]);
+  const [searchString, setSearchString] = useState("");
 
   const getPuppies = async () => {
     const newPuppies = await callDatabase();
@@ -18,9 +19,9 @@ const Main = () => {
 
   return (
     <div id="main">
-      <Navbar />
-      
-      <PuppyList puppies = {puppies}/>
+      <Navbar searchString={searchString} setSearchString={setSearchString} />
+
+      <PuppyList searchString={searchString} puppies={puppies} />
     </div>
   );
 };
