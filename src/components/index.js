@@ -4,3 +4,5 @@ export { default as callDatabase } from "./api";
 export { default as PuppyList } from "./PuppyList";
 export { default as PuppyCard } from "./PuppyCard";
 export { default as Footer } from "./Footer";
+export { default as Details } from "./Details";
+export { default as DetailedPuppyCard } from "./DetailedPuppyCard";
