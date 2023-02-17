@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 const PuppyCard = (props) => {
   return (
@@ -13,10 +14,14 @@ const PuppyCard = (props) => {
         alt={"pic of selected puppy"}
       ></img>
       <ul>
-        <li>{props.puppy.breed}</li>
-        {/* <li>{props.puppy.status}</li> */}
+        <li>Breed: {props.puppy.breed}</li>
+        <li>Status: {props.puppy.status}</li>
+        <li>Team ID: {props.puppy.teamId}</li>
+        <li>Cohort ID: {props.puppy.cohortId}</li>
       </ul>
-      <button>See Details</button>
+      <Link to={"/"}>
+      <button>Return</button>
+      </Link>
     </div>
   );
 };

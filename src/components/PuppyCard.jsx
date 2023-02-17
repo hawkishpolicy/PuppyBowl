@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 const PuppyCard = (props) => {
   return (
@@ -14,9 +15,10 @@ const PuppyCard = (props) => {
       ></img>
       <ul>
         <li>{props.puppy.breed}</li>
-        {/* <li>{props.puppy.status}</li> */}
       </ul>
+        <Link to={props.puppy.name}>
         <button>See Details</button>
+        </Link>
     </div>
   );
 };
