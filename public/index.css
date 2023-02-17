@@ -1,24 +1,31 @@
 body {
   margin: 0;
+  font-family: "Open-Sans", sans-serif;
 }
 
 #navbar {
-  background-color: black;
+  background-color: gray;
   color: white;
   display: flex;
   align-items: center;
   flex-grow: 1;
   max-height: 10%;
   min-height: 40px;
+  padding-left: 10px;
 }
 
 #searchBarInput {
-  border-radius: 10px;
+  border-radius: 2px;
+  border-style: none;
+  height: 20px;
+  /* margin-left: 10px; */
 }
 
 #searchBarButton {
   margin-left: 20px;
-  border-radius: 10px;
+  border-radius: 2px;
+  border-style: none;
+  height: 20px;
 }
 #puppyListDisplay {
   display: flex;
@@ -30,13 +37,36 @@ body {
   display: flex;
   flex-direction: column;
   border: solid 1px black;
-  padding: 10px;
+  padding: 20px;
   margin: 10px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px black;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgb(76, 75, 75);
   align-items: center;
+  width: 250px;
+}
+#puppyNameAndId {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-decoration: underline;
+}
+#puppyCardDisplay li {
+  list-style-type: none;
 }
 
+#puppyCardDisplay ul {
+  list-style-type: none;
+  padding-left: 0px;
+  align-self: flex-start;
+}
 #puppyProfilePic {
-  width: 200px;
+  width: 220px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+#footer {
+  background-color: rgb(187, 185, 45);
 }

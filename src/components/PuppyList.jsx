@@ -5,11 +5,6 @@ const PuppyList = (props) => {
   const puppies = props.puppies;
   const searchString = props.searchString;
 
-  {
-    /* {puppies.map((puppy) => {
-    return <PuppyCard puppy={puppy} />;
-  })} */
-  }
   return (
     <div id="puppyListDisplay">
       {!searchString
