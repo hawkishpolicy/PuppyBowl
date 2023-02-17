@@ -43,6 +43,7 @@ body {
   box-shadow: 5px 5px 10px rgb(76, 75, 75);
   align-items: center;
   width: 250px;
+  flex-grow: 1;
 }
 #puppyNameAndId {
   display: flex;
@@ -69,4 +70,12 @@ body {
 
 #footer {
   background-color: rgb(187, 185, 45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+}
+
+#footer h3 {
+  margin: 10px;
 }

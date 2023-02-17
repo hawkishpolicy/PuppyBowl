@@ -7,19 +7,20 @@ const PuppyCard = (props) => {
       <div id="puppyNameAndId">
         <h2>{props.puppy.name}</h2>
         <h3>#{props.puppy.id}</h3>
-        </div>
+      </div>
       <img
         id={"puppyProfilePic"}
         src={props.puppy.imageUrl}
         alt={"pic of selected puppy"}
       ></img>
-      <ul>
-        <li>{props.puppy.breed}</li>
-      </ul>
+        <ul>
+            <li>{props.puppy.breed}</li>
+        </ul>
         <Link to={props.puppy.name}>
-        <button>See Details</button>
+            <button>See Details</button>
         </Link>
     </div>
+        
   );
 };
 

@@ -9,12 +9,10 @@ const Main = () => {
   const getPuppies = async () => {
     const newPuppies = await callDatabase();
     setPuppies(newPuppies);
-    console.log(puppies);
   };
 
   useEffect(() => {
     getPuppies();
-    console.log(puppies);
   }, []);
 
   return (

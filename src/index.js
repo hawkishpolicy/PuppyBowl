@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Main, Details } from "./components";
+import { Main, Details, PuppyList } from "./components";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -15,6 +15,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<Main />} />
+      <Route path="/" element={<PuppyList />} />
       <Route path=":name" element={<Details />} />
     </>
   )

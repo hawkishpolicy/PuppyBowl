@@ -13,7 +13,6 @@ const Navbar = (props) => {
       <button
         onClick={() => {
           setSearchString(document.getElementById("searchBarInput").value);
-          console.log(searchString);
           document.getElementById("searchBarInput").value = "";
         }}
         id="searchBarButton"

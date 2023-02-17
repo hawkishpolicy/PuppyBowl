@@ -22,7 +22,7 @@ const Details = () => {
     <div>
       {puppies.map((puppy, idx) => {
         if (puppy.name === name) {
-          return <DetailedPuppyCard puppy={puppy} />;
+          return <DetailedPuppyCard key={"detailsMap"+puppy.id} puppy={puppy} />;
         } else {
           return null;
         }
